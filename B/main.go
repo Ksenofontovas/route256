@@ -7,14 +7,14 @@ import (
 func main() {
 
 	var count int
-	var cnt int
 	fmt.Scanln(&count)
 	for i := 0; i < count; i++ {
+		var cnt int
 		fmt.Scanln(&cnt)
-		fmt.Println("cnt =", cnt)
 		prices := make([]int, cnt)
 		for j := 0; j < cnt; j++ {
 			fmt.Scan(&prices[j])
+			//prices[j] = j
 			fmt.Println("j = ", j)
 		}
 		fmt.Println(cnt, prices)
